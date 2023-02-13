@@ -13,17 +13,17 @@ int[] GenerateArray(int len)
     int[] array = new int[len];
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"Введите число {i+1}: ");
+        Console.Write($"Введите число {i + 1}: ");
         array[i] = int.Parse(Console.ReadLine());
     }
     return array;
 }
 int PositivNumber(int[] number)
 {
-    int Positive =0;
+    int Positive = 0;
     for (int i = 0; i < number.Length; i++)
     {
-        if (number[i] >0)
+        if (number[i] > 0)
         {
             Positive++;
         }
